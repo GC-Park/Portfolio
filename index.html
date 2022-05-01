@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PGC's Portfolio</title>
+  <link rel="icon" href="/images/ParkGeunCheol.jpg">
+
+  <!-- css, js 연결 -->
+  <link rel="stylesheet" href="./css/main.css">
+  <script defer src="./js/main.js"></script>
+
+  <!-- chartjs 연결 -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+
+  <!-- google icon 연결 -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- fontawesome 연결 -->
+  <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+
+  <!-- ScrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+    integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- GSAP & ScrollToPlugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"
+    integrity="sha512-agNfXmEo6F+qcj3WGryaRvl9X9wLMQORbTt5ACS9YVqzKDMzhRxY+xjgO45HCLm61OwHWR1Oblp4QSw/SGh9SA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Lodash 연결 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+    integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="portfolioHeader">
+      <a href="#" class="headerName">PGC's Portfolio</a>
+      <div class="headerNavigation">
+        <a href="#AboutMe" class="headerNavigationMenu">ABOUT ME</a>
+        <a href="#Acticity" class="headerNavigationMenu">ACTIVITY</a>
+        <a href="#Project" class="headerNavigationMenu">PROJECT</a>
+        <a href="#sectionContact" class="headerNavigationMenu">CONTACT</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- INTRODUCE -->
+  <section class="introduce visual">
+    <div class="introduceContent">
+      <div class="introduceName fade-in">아티스트 같은 개발자 <br>
+        "박근철(Park Geuncheol)"</div>
+      <hr class="introduceLine fade-in">
+      <div class="introduceDream fade-in">웹 풀스택 개발자를 꿈꾸고 있습니다.<br>
+        내 아이디어를 내 손으로 실현할 수 있는<br>
+        능력을 키우려고 노력하고 있습니다.
+        <a href='#AboutMe' class="btn btn--gold fade-in">자세히 보기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT ME -->
+  <section id="AboutMe" class="scroll-spy">
+    <div class="aboutMe">
+      <div>
+        <h1 class="about Subject">About Me
+      </div>
+      <div class="aboutMeContent">
+        <div class="aboutMeInformation back-to-position to-right delay-0">
+          <div class="informationList">
+            <div class="information">이름<span class="material-symbols-outlined">
+                gbadge
+              </span><br><span>박근철</span></div>
+            <div class="information">고향<span class="material-symbols-outlined">
+                wb_shade
+              </span><br><span>전라남도 여수시</span></div>
+          </div>
+          <div class="informationList">
+            <div class="information">연락처<span class="material-symbols-outlined">
+                android_dialer
+              </span><br><span>010-2445-9230</span></div>
+            <div class="information">이메일<span class="material-symbols-outlined">
+                contact_mail
+              </span><br><span>kuyt3122@likelion.org</span></div>
+          </div>
+          <div class="informationList">
+            <div class="information">학력<span class="material-symbols-outlined">
+                school
+              </span><br><span>경북대학교<br>(컴퓨터학부)</span></div>
+            <div class="information abilityView">능력치 보기<br>사진click<span class="material-symbols-outlined ability">
+                keyboard_double_arrow_right
+              </span></div>
+          </div>
+        </div>
+        <div class="aboutMeAbility visible delay-0">
+          <div class="front">
+            <img src="./images/ParkGeunCheol.jpg" alt="" />
+          </div>
+          <div class="back">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVITY -->
+  <section id="Acticity" class="sectionActivity scroll-spy">
+    <div class="activity">
+      <div>
+        <h1 class="Subject">Activity
+      </div>
+      <div class="activityLists">
+        <div class="activityList">
+          <div class="activityContent visible"><span class="material-symbols-outlined check">
+              check
+            </span>캐나다 밴쿠버 어학연수
+            <div id="my_modal">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./images/CanadaTwo.jpg" alt="캐나다" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/CanadaOne.jpg" alt="캐나다" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/CanadaThree.jpg" alt="캐나다" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiperDirection">
+                <div class="swiper-prev">
+                  <div class="material-icons">arrow_back</div>
+                </div>
+                <div class="swiper-next">
+                  <div class="material-icons">arrow_forward</div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <a class="modal_close_btn">닫기</a>
+            </div>
+            <button class="modalButton" onclick="modalIdSearch(event)">more</button>
+          </div>
+          <div class="activityPeriod back-to-position to-left delay-1">2019.03 ~ 2020.05</div>
+        </div>
+        <div class="activityList">
+          <div class="activityContent visible"><span class="material-symbols-outlined check">
+              check
+            </span>멋쟁이 사자처럼 동아리 활동
+            <div id="my_modal1">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./images/likelion1.jpg" alt="멋사" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/likelion2.jpg" alt="멋사" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/likelion3.jpg" alt="멋사" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/likelion4.jpg" alt="멋사" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiperDirection">
+                <div class="swiper-prev">
+                  <div class="material-icons">arrow_back</div>
+                </div>
+                <div class="swiper-next">
+                  <div class="material-icons">arrow_forward</div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <a class="modal_close_btn">닫기</a>
+            </div>
+            <button class="modalButton" onclick="modalIdSearch(event)">more</button>
+          </div>
+          <div class="activityPeriod back-to-position to-left delay-1">2021.03 ~ 2022.03</div>
+        </div>
+        <div class="activityList">
+          <div class="activityContent visible"><span class="material-symbols-outlined check">
+              check
+            </span>Silicon Valley Software Technology Program
+            <div id="my_modal2">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./images/sanhose1.jpg" alt="산호세" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/sanhose2.png" alt="산호세" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/sanhose3.png" alt="산호세" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/sanhose4.jpg" alt="산호세" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/sanhose5.jpg" alt="산호세" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiperDirection">
+                <div class="swiper-prev">
+                  <div class="material-icons">arrow_back</div>
+                </div>
+                <div class="swiper-next">
+                  <div class="material-icons">arrow_forward</div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <a class="modal_close_btn">닫기</a>
+            </div>
+            <button class="modalButton" onclick="modalIdSearch(event)">more</button>
+          </div>
+          <div class="activityPeriod back-to-position to-left delay-1">2021.07 ~ 2021.08</div>
+        </div>
+        <div class="activityList">
+          <div class="activityContent visible"><span class="material-symbols-outlined check">
+              check
+            </span>University of Texas at Austin, 어학연수
+            <div id="my_modal3">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./images/texas1.jpg" alt="텍사스" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/texas2.jpg" alt="텍사스" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiperDirection">
+                <div class="swiper-prev">
+                  <div class="material-icons">arrow_back</div>
+                </div>
+                <div class="swiper-next">
+                  <div class="material-icons">arrow_forward</div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <a class="modal_close_btn">닫기</a>
+            </div>
+            <button class="modalButton" onclick="modalIdSearch(event)">more</button>
+          </div>
+          <div class="activityPeriod back-to-position to-left delay-1">2022.01 ~ 2022.01</div>
+        </div>
+        <div class="activityList">
+          <div class="activityContent visible"><span class="material-symbols-outlined check">
+              check
+            </span>멋쟁이 사자처럼 동아리 운영진 활동
+            <div id="my_modal1">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./images/likelion1.jpg" alt="멋사" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/likelion2.jpg" alt="멋사" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/likelion3.jpg" alt="멋사" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/likelion4.jpg" alt="멋사" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiperDirection">
+                <div class="swiper-prev">
+                  <div class="material-icons">arrow_back</div>
+                </div>
+                <div class="swiper-next">
+                  <div class="material-icons">arrow_forward</div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <a class="modal_close_btn">닫기</a>
+            </div>
+            <button class="modalButton" onclick="modalIdSearch(event)">more</button>
+          </div>
+          <div class="activityPeriod back-to-position to-left delay-1">2022.03 ~ ing</div>
+        </div>
+        <div class="activityList">
+          <div class="activityContent visible"><span class="material-symbols-outlined check">
+              check
+            </span>경북대학교 기획팀 IR센터 프론트엔드 직무 근무
+          </div>
+          <div class="activityPeriod back-to-position to-left delay-1">2022.03 ~ ing</div>
+        </div>
+        <div class="activityList">
+          <div class="activityContent visible"><span class="material-symbols-outlined check">
+              check
+            </span>KAKAO Full-Stack Web Development Study</div>
+          <div class="activityPeriod back-to-position to-left delay-1">2022.03 ~ ing </div>
+        </div>
+        <div class="activityList">
+          <div class="activityContent visible"><span class="material-symbols-outlined check">
+              check
+            </span>NEXON MOD운영진</div>
+          <div class="activityPeriod back-to-position to-left delay-1">2022.04 ~ ing</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT -->
+  <section id="Project">
+    <div class="project">
+      <div>
+        <h1 class="Subject">Project
+      </div>
+      <ul class="projectLists">
+        <!-- PROJECT FIRST -->
+        <li class="projectListRight scroll-spy">
+          <div class="projectImage visible">
+            <a href="https://likelion-knu.netlify.app/load_game.html" target="_blank"><img
+                src="/images/minigameProject.PNG" alt="멋사플젝"></a>
+          </div>
+          <div class="projectContent visible delay-0">
+            <p class="projectOverline">
+              1. Featured Project
+            </p>
+            <h3 class="projectTitle">
+              <span>멋쟁이 사자처럼 미니게임</span>
+            </h3>
+            <div class="projectDescription">
+              <p>이번 연도 동아리 모집 기간에'멋쟁이 사자처럼'동아리에서 만든 사이드 프로젝트입니다.<br>
+                생각보다 많은 188명의 유저가 플레이해준 만큼 바이럴 마케팅도 성공적이었습니다.<br>
+                처음으로 google analytics를 사용해 피드백을 받아 유지/보수 작업을 했습니다.
+              </p>
+            </div>
+            <ul class="projectTechList">
+              <li>JavaScript</li>
+              <li>JQuery</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Google Analytics</li>
+            </ul>
+            <div class="projectLink">
+              <a href="https://github.com/Moon-GD/Likelion10th-executive" target="_blank"><span
+                  class="material-symbols-outlined">
+                  link
+                </span></a>
+              <a href="https://likelion-knu.netlify.app" target="_blank"><span class="material-symbols-outlined">
+                  add_link
+                </span></a>
+            </div>
+          </div>
+        </li>
+        <!-- PROJECT SECOND -->
+        <li class="projectListLeft scroll-spy">
+          <div class="projectImage visible">
+            <a href="https://iualbum.netlify.app/" target="_blank"><img src="/images/iualbumProject.PNG" alt="멋사플젝"></a>
+          </div>
+          <div class="projectContent visible delay-0">
+            <p class="projectOverline">
+              2. Featured Project
+            </p>
+            <h3 class="projectTitle">
+              <span>아이유 앨범 추천 사이트</span>
+            </h3>
+            <div class="projectDescription">
+              <p>요즘 유행하는 MBTI식 알고리즘을 사용해 만든 아이유 앨범 추천 사이트입니다.<br>
+                약 200명의 유저가 플레이 해주었고 처음으로 광고를 넣어서 수익을 창출한 사이트입니다.
+              </p>
+            </div>
+            <ul class="projectTechList">
+              <li>JavaScript</li>
+              <li>JQuery</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Kakao Adfit</li>
+            </ul>
+            <div class="projectLink">
+              <a href="https://github.com/GC-Park/IUproject1" target="_blank"><span class="material-symbols-outlined">
+                  link
+                </span></a>
+              <a href="https://iualbum.netlify.app/" target="_blank"><span class="material-symbols-outlined">
+                  add_link
+                </span></a>
+            </div>
+          </div>
+        </li>
+        <!-- PROJECT THIRD -->
+        <li class="projectListRight scroll-spy">
+          <div class="projectImage  visible">
+            <a href="https://patrick-movie.netlify.app" target="_blank"><img src="/images/movieProject.PNG"
+                alt="멋사플젝"></a>
+          </div>
+          <div class="projectContent visible delay-0">
+            <p class="projectOverline">
+              3. Featured Project
+            </p>
+            <h3 class="projectTitle">
+              <span>영화 검색/평점 확인 사이트</span>
+            </h3>
+            <div class="projectDescription">
+              <p>Vuejs 프레임워크로 만든 개인 프로젝트 영화 검색 및 평점 확인 사이트입니다. <br>
+                UI/UX에 신경을 많이 썼고 프레임워크의 편리함과 유용함을 알 수 있었습니다.
+              </p>
+            </div>
+            <ul class="projectTechList">
+              <li>Vuejs</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>BootStrap</li>
+            </ul>
+            <div class="projectLink">
+              <a href="https://github.com/GC-Park/movie-app" target="_blank"><span class="material-symbols-outlined">
+                  link
+                </span></a>
+              <a href="https://patrick-movie.netlify.app" target="_blank"><span class="material-symbols-outlined">
+                  add_link
+                </span></a>
+            </div>
+          </div>
+        </li>
+        <!-- PROJECT FOURTH -->
+        <li class="projectListLeft scroll-spy">
+          <div class="projectImage  visible">
+            <a href="http://ir.knu.ac.kr/contents/01_company/sub02.html" target="_blank"><img
+                src="/images/ircenterProject1.png" alt="멋사플젝"></a>
+          </div>
+          <div class="projectContent visible delay-0">
+            <p class="projectOverline">
+              4. Featured Project
+            </p>
+            <h3 class="projectTitle">
+              <span>경북대학교 IR센터 홈페이지</span>
+            </h3>
+            <div class="projectDescription">
+              <p>경북대학교 기획팀 IR센터에서 관리하는 데이터를 가지고 Chartjs와 <br>amchartjs로 시각화하는 일을 하고 있습니다.<br>
+                <br>Vuejs뿐만 아니라 Nodejs, MySql까지 웹의 전반적인 부분 모두를 <br>경험할 수 있었고 큰 틀을 이해할 수 있었습니다. 팀장님이 믿고
+                <br>맡겨주셔서 디자인, 레이아웃 구성 등을 해볼 수 있었습니다.
+              </p>
+            </div>
+            <ul class="projectTechList">
+              <li>Vuejs</li>
+              <li>JavaScript</li>
+              <li>Nodejs</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>MySql</li>
+            </ul>
+          </div>
+    </div>
+    </li>
+    </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="sectionContact" class="scroll-spy">
+    <div class="triangle"></div>
+    <div>
+      <h1 class="contactSubject">Contact
+    </div>
+    <div class="contact back-to-position to-left delay-1">
+      <input type="checkbox" id="card-toggle" aria-label="Open the card">
+      <label class="card" for="card-toggle">
+        <div class="card-face front-flap outside">
+          <div class="card-face-content">
+            <img src="/images/KNUlogo.png" alt="">
+          </div>
+        </div>
+        <div class="card-face front-flap inside">
+        </div>
+        <div class="card-face back-flap inside">
+          <div class="card-justify">
+            <img src="/images/KNUlogo_in.png" alt="">
+            <div class="card-justify-information">
+              <div class="card-major">컴퓨터학부 학생</div>
+              <div class="card-name">박근철</div>
+              <div class="card-email">TS. Vuejs, JS, jQuery, HTML/CSS, Nodejs, Django</div>
+              <div class="card-address">41566 대구 북구 대학로 80 (산격동,경북대학교)</div>
+              <div class="card-phone">T. 010-2445-9230&nbsp; &nbsp; F. 82.53.210.5899</div>
+              <div class="card-email">E. qkrtk9230@knu.ac.kr</div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+  </section>
+
+  <!-- FOOTER -->
+  <section class="footer">
+    <div class="social-menu">
+      <ul>
+        <li><a href="https://github.com/GC-Park" target="blank"><i class="fab fa-github"></i></i></a></li>
+        <li><a href="https://www.instagram.com/pgc_patrick/" target="blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://programmers.co.kr/job_profiles/public_setting"><i class="fab fa-codepen"
+              target="blank"></i></a></li>
+      </ul>
+    </div>
+    <div class="footerCopyright">© 2021. Park Guen Cheol. All rights reserved.</div>
+  </section>
+
+
+  <!-- BUTTON TO-TOP -->
+  <a href="#">
+    <div id="to-top">
+      <div class="material-icons">arrow_upward</div>
+    </div>
+  </a>
+
+
+</body>
+
+</html>
