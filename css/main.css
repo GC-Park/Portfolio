@@ -180,7 +180,7 @@ header.show{
             rgba(53, 47, 60, 0.8) 0,
             rgba(47, 46, 48, 0.8) 90%
         ),
-        url(./images/computer.jpg) 50% no-repeat;
+        url(../images/computer.jpg) 50% no-repeat;
     background-size: cover;
     background-attachment: fixed;
     z-index: -1;
