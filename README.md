@@ -2,11 +2,11 @@
 
 주제 : 나만의 포트폴리오 만들기
 
-# github & 시연 영상링크
+# 홈페이지 & github & 시연 영상 링크
 
+-   [홈페이지 영상 링크](https://gc-park.github.io/Portfolio/, 'homepage link')
 -   [Github 링크](https://github.com/GC-Park/Portfolio, 'github link')
 -   [시연 영상 링크](https://youtu.be/cWN0rFTqf5I, 'youtube link')
-
 ---
 
 ## 1. 과제 목표
