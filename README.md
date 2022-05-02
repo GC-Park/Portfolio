@@ -4,9 +4,10 @@
 
 # 홈페이지 & github & 시연 영상 링크
 
--   [홈페이지 링크]("https://gc-park.github.io/Portfolio/", 'homepage link')
--   [Github 링크]("https://github.com/GC-Park/Portfolio", 'github link')
--   [시연 영상 링크]("https://youtu.be/cWN0rFTqf5I", 'youtube link')
+* 홈페이지 링크: <https://gc-park.github.io/Portfolio/>
+* github 링크: <https://github.com/GC-Park/Portfolio>
+* 시연 영상 링크: <https://youtu.be/cWN0rFTqf5I>
+
 ---
 
 ## 1. 과제 목표
