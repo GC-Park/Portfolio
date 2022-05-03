@@ -943,7 +943,8 @@ header.show{
         height: 300px;
         border-radius: 5px;
     }
-    .projectListLeft .projectTechList {
+    .projectListLeft .projectTechList,
+    .projectListRight .projectTechList {
         display: flex;
         justify-content: center;
     }
