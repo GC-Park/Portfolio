@@ -488,8 +488,6 @@ header.show{
 .projectListRight .projectImage a > img {
     width: 80vh;
     height: 50vh;
-    max-width: 610px;
-    max-height: 400px;
     border-radius: 5px;
 }
 .projectListRight .projectImage a > img {
@@ -563,8 +561,6 @@ header.show{
 .projectListLeft .projectImage a > img {
     width: 80vh;
     height: 50vh;
-    max-width: 610px;
-    max-height: 400px;
     border-radius: 5px;
 }
 .projectListLeft .projectImage a > img {
