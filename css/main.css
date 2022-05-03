@@ -260,7 +260,10 @@ header.show{
     width: 60vh;
     height: 60vh;
     min-height: 400px;
+    max-height: 500px;
     min-width: 400px;
+    max-width: 500px;
+    
 }
 .aboutMeAbility .back {
     width: 60vh;
