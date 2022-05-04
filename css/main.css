@@ -270,7 +270,9 @@ header.show{
     height: 60vh;
     border: 1px solid #ff9500;
     min-height: 400px;
+    max-height: 500px;
     min-width: 400px;
+    max-width: 500px;
 }
 .aboutMeAbility .front,
 .aboutMeAbility .back {
