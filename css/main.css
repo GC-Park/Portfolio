@@ -949,5 +949,11 @@ header.show{
         display: flex;
         justify-content: center;
     }
+    .projectListLeft .projectImage a > img,
+    .projectListRight .projectImage a > img {
+        width: 400px;
+        height: 300px;
+        border-radius: 5px;
+    }
     
   }
