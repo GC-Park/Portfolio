@@ -944,11 +944,6 @@ header.show{
         text-align: center;
         position: relative;
     }
-    .projectListLeft .projectImage a > img {
-        width: 400px;
-        height: 300px;
-        border-radius: 5px;
-    }
     .projectListLeft .projectTechList,
     .projectListRight .projectTechList {
         display: flex;
