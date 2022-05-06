@@ -914,6 +914,10 @@ header.show{
     .headerNavigation{
         display:none;
     }
+    /* INTRODUCE */
+    .introduceLine {
+        width: 30vw;
+    }
     /* ABOUT ME */
     .aboutMeAbility{
         display: none;
