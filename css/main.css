@@ -959,5 +959,119 @@ header.show{
         height: 300px;
         border-radius: 5px;
     }
-    
-  }
+}
+
+@media (max-width: 430px) {
+    /* HEADER */
+    .headerNavigation {
+        display: none;
+    }
+    /* INTRODUCE */
+    .introduceLine {
+        width: 30vw;
+    }
+    .introduceName {
+        font-family: Black Han Sans, sans-serif;
+        font-weight: 400;
+        font-size: 2rem;
+        color: #fff;
+        word-break: keep-all;
+    }
+    .introduceDream {
+        margin: 0 auto 2rem;
+        font-weight: 400;
+        font-size: 1rem;
+        color: hsla(0, 0%, 100%, 0.75);
+        line-height: 1.5;
+    }
+    .introduce .btn {
+        margin: 0 auto;
+        margin: 2.5rem auto;
+        width: 43vw;
+        font-size: 1rem;
+    }
+    /* ABOUT ME */
+    .aboutMeAbility {
+        display: none;
+    }
+    .aboutMeInformation .informationList {
+        margin-left: 0.01vw;
+        text-align: center;
+    }
+    .aboutMeInformation .information {
+        font-size: 2rem;
+    }
+    .aboutMeInformation .information span {
+        font-size: 1rem;
+    }
+    .aboutMeInformation .information.abilityView {
+        color: #ff9500;
+        display: none;
+        font-size: 1px;
+    }
+    .aboutMeInformation .information .ability {
+        font-size: 1rem;
+    }
+    /* ACTIVITY */
+    .activityList {
+        display: flex;
+        flex-direction: column;
+    }
+    .activityContent {
+        margin-bottom: 0 !important;
+    }
+    .activityPeriod {
+        margin-bottom: 5vh;
+        margin-left: 5vw;
+    }
+    .activityList .activityContent {
+        font-size: 1rem;
+    }
+    .activityList .check {
+        font-size: 1rem;
+        color: #ff9500;
+    }
+    .activityList .activityPeriod {
+        font-size: 1rem;
+    }
+    /* PROJECT */
+    .projectListRight .projectImage,
+    .projectListLeft .projectImage {
+        position: static;
+    }
+    .projectListRight,
+    .projectListLeft {
+        text-align: center;
+        position: relative;
+    }
+    .projectListLeft .projectImage a > img,
+    .projectListRight .projectImage a > img {
+        width: 80vw;
+        height: 60vw;
+        border-radius: 5px;
+    }
+    .projectListLeft .projectTechList,
+    .projectListRight .projectTechList {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* CONTACT */
+    .card {
+        display: block;
+        position: relative;
+        z-index: 2;
+        perspective: 2000px;
+        margin: 6vh auto 0 auto;
+        width: 80vw;
+        height: 40vh;
+    }
+
+    /* BUTTON */
+    #to-top {
+        width: 0.1px;
+        height: 0.1px;
+        position: static;
+        display: none;
+    }
+}
