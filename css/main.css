@@ -991,6 +991,9 @@ header.show{
         font-size: 1rem;
     }
     /* ABOUT ME */
+    .aboutMe {
+        padding: 0;
+    }
     .aboutMeAbility {
         display: none;
     }
@@ -1013,6 +1016,9 @@ header.show{
         font-size: 1rem;
     }
     /* ACTIVITY */
+    .activity {
+        padding: 0;
+    }
     .activityList {
         display: flex;
         flex-direction: column;
@@ -1035,6 +1041,9 @@ header.show{
         font-size: 1rem;
     }
     /* PROJECT */
+    .project {
+        padding:0;
+    }
     .projectListRight .projectImage,
     .projectListLeft .projectImage {
         position: static;
