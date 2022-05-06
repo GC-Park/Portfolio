@@ -1040,6 +1040,71 @@ header.show{
     .activityList .activityPeriod {
         font-size: 1rem;
     }
+    #my_modal,
+    #my_modal3 {
+        display: none;
+        width: 200px;
+        padding: 20px 60px;
+        background-color: #fefefe;
+        border: 1px solid #888;
+        border-radius: 3px;
+    }
+    #my_modal2,
+    #my_modal1 {
+        display: none;
+        width: 200px;
+        padding: 20px 60px;
+        background-color: #fefefe;
+        border: 1px solid #888;
+        border-radius: 3px;
+    }
+
+    #my_modal .modal_close_btn,
+    #my_modal1 .modal_close_btn,
+    #my_modal3 .modal_close_btn,
+    #my_modal2 .modal_close_btn {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        background-color: #fefefe;
+    }
+    #my_modal .swiper,
+    #my_modal1 .swiper,
+    #my_modal3 .swiper,
+    #my_modal2 .swiper {
+        margin: 0 auto;
+    }
+    #my_modal .swiper-slide img,
+    #my_modal3 .swiper-slide img {
+        width: 200px;
+        height: 300px;
+    }
+
+    #my_modal2 .swiper-slide img,
+    #my_modal1 .swiper-slide img {
+        width: 200px;
+        height: 300px;
+    }
+    #my_modal .swiper-prev,
+    #my_modal3 .swiper-prev,
+    #my_modal1 .swiper-prev,
+    #my_modal2 .swiper-prev {
+        left: 10px;
+        top: 150px;
+    }
+    #my_modal .swiper-next,
+    #my_modal3 .swiper-next,
+    #my_modal1 .swiper-next,
+    #my_modal2 .swiper-next {
+        right: 10px;
+        top: 150px;
+    }
+    #my_modal .swiper-pagination,
+    #my_modal3 .swiper-pagination,
+    #my_modal2 .swiper-pagination,
+    #my_modal1 .swiper-pagination {
+        display: none;
+    }
     /* PROJECT */
     .project {
         padding: 0;
