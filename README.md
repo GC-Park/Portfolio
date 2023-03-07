@@ -28,7 +28,7 @@
 
 - CSS : HTML안에 작성된 내용들을 꾸며주는 역할을 하는 CSS로 UI를 더 보기 편하게 만들었습니다. width, background, color 등의 기초적인 태그부터 transform 등까지 수업에서 배운 것들을 사용해 창의적인 것들을 만들어봤습니다.
 
-- JavaScript :　 HTML을 참조해 많은 것을 동적으로 움직일 수 있게 만들었습니다. 수업 중에 배운 getElementBy, classlist 등을 사용했고 더 욕심이 생겨 chartjs, swiper, gsap 등의 라이브러리도 사용했습니다.
+- JavaScript : HTML을 참조해 많은 것을 동적으로 움직일 수 있게 만들었습니다. 수업 중에 배운 getElementBy, classlist 등을 사용했고 더 욕심이 생겨 chartjs, swiper, gsap 등의 라이브러리도 사용했습니다.
 
 ---
 
